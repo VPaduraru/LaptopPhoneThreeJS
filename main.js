@@ -61,6 +61,7 @@ gltfLoader.load('MacBookAir.gltf', (gltfScene) => {
 });
 
 video.play();
+//test
 
 
 //controls.update() must be called after any manual changes to the camera's transform
