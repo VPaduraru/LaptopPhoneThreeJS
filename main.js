@@ -8,7 +8,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setClearColor(0x000000, 0);
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth/2, window.innerHeight/2);
 document.body.appendChild(renderer.domElement);
 
 
@@ -18,7 +18,7 @@ scene.add(light);
 const directionalLight = new THREE.DirectionalLight(0xffffff, 10);
 directionalLight.position.set(5, 5, -5);
 scene.add(directionalLight);
-scene.background = new THREE.Color(0xAAAAAA);
+// scene.background = new THREE.Color(0xAAAAAA);
 
 
 let video = document.getElementById("phoneVideo");
